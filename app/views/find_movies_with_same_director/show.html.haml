@@ -1,0 +1,8 @@
+%h2 Similar movies to #{@movie.title}
+
+%ul
+  - @similar_movies.each do |mov|
+    %li 
+      = mov.title
+
+= link_to "Back to #{@movie.title} page", movie_path(@movie)
